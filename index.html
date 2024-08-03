@@ -46,10 +46,10 @@
         <div class="right_section">
           <form>
             <div class="grid_1">
-              <label for="card_name">Enter Amount</label>
+              <label for="card_name">CardHolder Name</label>
               <input
                 type="number"
-                placeholder="e.g. 10"
+                placeholder="e.g. John Doe"
                 id="card_name"
                 required
               />
@@ -98,6 +98,13 @@
                 <label for="card_cvc">CVC</label>
                 <input type="number" oninput="if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="3" placeholder="e.g. 123" id="card_cvc" required />
               </div>
+            </div>
+              <div class="grid_2">
+              <label for="card_number">Amount</label>
+              <input
+                type="number"
+                required
+              />
             </div>
             <button id="submit_btn" type="submit">Confirm</button>
           </form>
